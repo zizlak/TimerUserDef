@@ -26,13 +26,8 @@ struct RegisterView: View {
                     .foregroundColor(tintColor)
             }
             
-            
-            Button(action: registerUser) {
-                HStack {
-                    Image(systemName: "checkmark.circle")
-                    Text("Ok")
-                }
-            }.disabled(name.count < 3)
+            ButtonLogIn(action: registerUser)
+                .disabled(name.count < 3)
         }
         .padding()
     }
@@ -45,7 +40,7 @@ extension RegisterView {
             user.isRegister = true
             
             Storage.shared.storage = name
-        
+            
         }
     }
 }
@@ -53,6 +48,6 @@ extension RegisterView {
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
-        .environmentObject(UserManager())
+            .environmentObject(UserManager())
     }
 }

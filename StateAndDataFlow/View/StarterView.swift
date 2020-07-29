@@ -14,7 +14,7 @@ struct StarterView: View {
     var body: some View {
         
         Group {
-        
+            
             if user.isRegister || Storage.shared.storage != nil{
                 ContentView()
             } else {

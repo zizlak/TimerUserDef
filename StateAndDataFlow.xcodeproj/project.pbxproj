@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A0737B8D24D17302004384FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0737B8C24D17302004384FA /* Storage.swift */; };
+		A0737B9124D18001004384FA /* ButtonLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0737B9024D18000004384FA /* ButtonLogIn.swift */; };
+		A0737B9324D181B0004384FA /* ButtonStartLogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0737B9224D181B0004384FA /* ButtonStartLogOut.swift */; };
 		A845606724CF47B7005EF569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845606624CF47B7005EF569 /* AppDelegate.swift */; };
 		A845606924CF47B7005EF569 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845606824CF47B7005EF569 /* SceneDelegate.swift */; };
 		A845606B24CF47B7005EF569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845606A24CF47B7005EF569 /* ContentView.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		A0737B8C24D17302004384FA /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A0737B9024D18000004384FA /* ButtonLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLogIn.swift; sourceTree = "<group>"; };
+		A0737B9224D181B0004384FA /* ButtonStartLogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStartLogOut.swift; sourceTree = "<group>"; };
 		A845606324CF47B7005EF569 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A845606624CF47B7005EF569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A845606824CF47B7005EF569 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0737B8E24D17F6A004384FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A845607A24CF4F58005EF569 /* TimeCounter.swift */,
+				A0737B8C24D17302004384FA /* Storage.swift */,
+				A845607E24CF56C7005EF569 /* UserManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0737B8F24D17F83004384FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A845608024CF5945005EF569 /* StarterView.swift */,
+				A845606A24CF47B7005EF569 /* ContentView.swift */,
+				A845607C24CF556A005EF569 /* RegisterView.swift */,
+				A0737B9224D181B0004384FA /* ButtonStartLogOut.swift */,
+				A0737B9024D18000004384FA /* ButtonLogIn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A845605A24CF47B7005EF569 = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +94,8 @@
 			children = (
 				A845606624CF47B7005EF569 /* AppDelegate.swift */,
 				A845606824CF47B7005EF569 /* SceneDelegate.swift */,
-				A845606A24CF47B7005EF569 /* ContentView.swift */,
-				A845607A24CF4F58005EF569 /* TimeCounter.swift */,
-				A845607C24CF556A005EF569 /* RegisterView.swift */,
-				A845608024CF5945005EF569 /* StarterView.swift */,
-				A0737B8C24D17302004384FA /* Storage.swift */,
-				A845607E24CF56C7005EF569 /* UserManager.swift */,
+				A0737B8F24D17F83004384FA /* View */,
+				A0737B8E24D17F6A004384FA /* Model */,
 				A845606C24CF47BA005EF569 /* Assets.xcassets */,
 				A845607124CF47BA005EF569 /* LaunchScreen.storyboard */,
 				A845607424CF47BA005EF569 /* Info.plist */,
@@ -167,7 +189,9 @@
 				A0737B8D24D17302004384FA /* Storage.swift in Sources */,
 				A845607D24CF556A005EF569 /* RegisterView.swift in Sources */,
 				A845606924CF47B7005EF569 /* SceneDelegate.swift in Sources */,
+				A0737B9324D181B0004384FA /* ButtonStartLogOut.swift in Sources */,
 				A845606B24CF47B7005EF569 /* ContentView.swift in Sources */,
+				A0737B9124D18001004384FA /* ButtonLogIn.swift in Sources */,
 				A845607B24CF4F58005EF569 /* TimeCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

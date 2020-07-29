@@ -8,8 +8,6 @@
 import Foundation
 
 class Storage{
-    
-    
     static let shared = Storage()
     
     private let kStorageUser = "UserDefaultsPersistance.kStorageUser"
