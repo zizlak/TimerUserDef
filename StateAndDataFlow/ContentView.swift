@@ -12,11 +12,9 @@ struct ContentView: View {
     @ObservedObject private var timer = TimeCounter()
     @EnvironmentObject var user: UserManager
     
-    let userDefaults = UserDefaults.standard.string(forKey: "user")
-    
     var body: some View {
         VStack {
-            Text("Hi, \(userDefaults ?? "???")")
+            Text("Hi, \(Storage.shared.storage ?? "?")")
                 .font(.largeTitle)
                 .offset(x: 0, y: 100)
             Text("\(timer.counter)")

@@ -11,13 +11,11 @@ import SwiftUI
 struct StarterView: View {
     @EnvironmentObject var user: UserManager
     
-    let userDefaults = UserDefaults.standard.string(forKey: "user")
-    
     var body: some View {
         
         Group {
         
-            if user.isRegister || userDefaults != nil{
+            if user.isRegister || Storage.shared.storage != nil{
                 ContentView()
             } else {
                 RegisterView()

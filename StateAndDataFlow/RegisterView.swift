@@ -44,8 +44,8 @@ extension RegisterView {
             user.name = name
             user.isRegister = true
             
-            let userDefaults = UserDefaults.standard
-            userDefaults.set(name, forKey: "user")
+            Storage.shared.storage = name
+        
         }
     }
 }

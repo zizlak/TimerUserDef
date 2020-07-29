@@ -14,14 +14,9 @@ class Storage{
     
     private let kStorageUser = "UserDefaultsPersistance.kStorageUser"
     
-//    let userDefaults = UserDefaults.standard
-//    let pageWasViewed = userDefaults.bool(forKey: "viewed")
-    
-//    var storage: String? {
-//        set { UserDefaults.standard.set(newValue, forKey: kStorageUser)}
-//        get { return (UserDefaults.standard.get(forKey: kStorageUser)}
-            
-    //        UserDefaults.standard.array(forKey: kStorageUser) as? [String]) }
-  //  }
+    var storage: String? {
+        set { UserDefaults.standard.set(newValue, forKey: kStorageUser)}
+        get { return (UserDefaults.standard.string(forKey: kStorageUser))}
+    }
 }
 
